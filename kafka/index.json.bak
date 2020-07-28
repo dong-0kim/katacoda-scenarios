@@ -1,11 +1,11 @@
 {
-  "title": "Kafka 설치",
-  "description": "Kafka 설치",
+  "title": "kkk Scenario",
+  "description": "Your First Scenario",
   "difficulty": "beginner",
-  "time": "15 minutes",
+  "time": "2 minutes",
   "details": {
     "steps": [{
-      "title": "Kafka install",
+      "title": "Step 1 - Run Command",
       "text": "step1.md"
     }],
     "intro": {

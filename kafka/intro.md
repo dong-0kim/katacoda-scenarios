@@ -1,1 +1,1 @@
-Welcome to your first Katacoda Scenario!
+Kafka 설치 과정입니다.
