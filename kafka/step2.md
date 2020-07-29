@@ -1,9 +1,9 @@
 topic, producer, consumer 실습해 봅시다!
 
 ## Task
----
+
 topic, producer, consumer 실습
----
+
 15. `./kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic test`
 ---
 16. `./kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test`
