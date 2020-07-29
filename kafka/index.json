@@ -7,7 +7,12 @@
     "steps": [{
       "title": "Kafka install",
       "text": "step1.md"
-    }],
+    },
+    {
+      "title": "Kafka 실습",
+      "text": "step2.md"
+    }
+             ],
     "intro": {
       "text": "intro.md",
       "credits": ""
