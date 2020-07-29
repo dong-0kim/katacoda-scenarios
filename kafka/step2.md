@@ -1,20 +1,14 @@
-Kafka를 설치해 봅시다!
+topic, producer, consumer 실습해 봅시다!
 
 ## Task
 
-Kafka와 Zookeeper를 설치해 봅시다.
+topic, producer, consumer 실습
 
-1. `apt-get update`{{execute}}
-2. `apt-get --assume-yes install default-jre`{{execute}}
-3. `apt-get --assume-yes install zookeeperd`{{execute}}
-4. `service zookeeper stop`{{execute}}
-5. `mkdir kafka`{{execute}}
-6. `cd $HOME/kafka`{{execute}}
-7. `wget http://www-us.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz`{{execute}}
-8. `mv *.tgz  kafka.tgz`{{execute}}
-9. `tar -xvzf ./kafka.tgz --strip 1`{{execute}}
-10. `rm kafka.tgz`{{execute}}
-
-11.`vi config/server.properties`{{execute}}
-12.`service zookeeper start`{{execute}}
-13. `nohup $HOME/kafka/bin/kafka-server-start.sh $HOME/kafka/config/server.properties > $HOME/kafka.log 2>&1 &`{{execute}}
+15 ./kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic test
+16 ./kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test
+17 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+18 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test -group testgroup --from-beginning
+19 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+20 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group testgroup --describe
+21 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group testgroup --topic test --reset-offsets --to-earliest --execute
+22 ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group testgroup --topic test:1 --reset-offsets --to-offset 10 --execute
