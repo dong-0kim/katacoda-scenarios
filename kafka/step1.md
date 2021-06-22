@@ -10,7 +10,7 @@ Kafka와 Zookeeper를 설치해 봅시다.
 4. `service zookeeper stop`{{execute}}
 5. `mkdir kafka`{{execute}}
 6. `cd $HOME/kafka`{{execute}}
-7. `wget http://www-us.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz`{{execute}}
+7. `wget http://www-us.apache.org/dist/kafka/2.7.1/kafka_2.13-2.7.1.tgz`{{execute}}
 8. `mv *.tgz  kafka.tgz`{{execute}}
 9. `tar -xvzf ./kafka.tgz --strip 1`{{execute}}
 10. `rm kafka.tgz`{{execute}}
